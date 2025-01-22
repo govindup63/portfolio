@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Hyperspeed from "@/components/Hyperspeed/Hyperspeed";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,15 +20,23 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="fixed inset-0 z-[1]">
+          <Hyperspeed />
+        </div>
+        <main className="relative min-h-screen">
+          {children}
+        </main>
+        <footer className="absolute bottom-0 w-full py-4 text-center text-foreground/60 text-sm pointer-events-none">
+          © {new Date().getFullYear()} All rights reserved. Govind Pandey
+        </footer>
       </body>
     </html>
   );
