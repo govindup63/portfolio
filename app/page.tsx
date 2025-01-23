@@ -1,11 +1,14 @@
-
-
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-8 relative z-[2] pointer-events-none">
-      <h1 className="text-4xl font-bold tracking-tight text-foreground/80 animate-pulse">
-        Work in progress
-      </h1>
+      <div className="flex flex-col items-center gap-2">
+        <h1 className="text-4xl font-bold tracking-tight text-foreground/80 animate-pulse">
+          Work in progress
+        </h1>
+        <p className="text-xs text-foreground/40 animate-pulse opacity-20">
+         {"{ Click anywhere to change speed }"}
+        </p>
+      </div>
       <div className="flex gap-4">
         <a
           href="https://www.linkedin.com/in/govind-pandey-1611081b6/"

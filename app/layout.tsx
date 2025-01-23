@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Govind",
+  title: "Govind's Portfolio",
   description: "Govind's Portfolio",
 };
 
@@ -34,7 +34,7 @@ export default function RootLayout({
         <main className="relative min-h-screen">
           {children}
         </main>
-        <footer className="absolute bottom-0 w-full py-4 text-center text-foreground/60 text-sm pointer-events-none z-[3]">
+        <footer className="absolute bottom-0 w-full py-4 text-center text-foreground/60 text-sm pointer-events-none z-[3] animate-pulse">
           © {new Date().getFullYear()} All rights reserved. Govind Pandey
         </footer>
       </body>
