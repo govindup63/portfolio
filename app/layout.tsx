@@ -28,13 +28,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="fixed inset-0 z-[1]">
+        <div className="fixed inset-0 z-[1] blur-md">
           <Hyperspeed />
         </div>
         <main className="relative min-h-screen">
           {children}
         </main>
-        <footer className="absolute bottom-0 w-full py-4 text-center text-foreground/60 text-sm pointer-events-none">
+        <footer className="absolute bottom-0 w-full py-4 text-center text-foreground/60 text-sm pointer-events-none z-[3]">
           © {new Date().getFullYear()} All rights reserved. Govind Pandey
         </footer>
       </body>
