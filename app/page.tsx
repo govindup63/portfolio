@@ -6,7 +6,7 @@ export default function Home() {
           Work in progress
         </h1>
         <p className="text-xs text-foreground/40 animate-pulse opacity-20">
-         {"{ Click anywhere to change speed }"}
+         {"{ Click and hold anywhere to change speed }"}
         </p>
       </div>
       <div className="flex gap-4">
